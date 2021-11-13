@@ -1,0 +1,9 @@
+[
+    { "artist": "John Doe", "title": "Hello world", "year": "2020", "tracks": [
+        {"title": "marvels", "artist": "John Doe", "genre": "rock", "duration": "3:33"}
+    ] },
+    { "artist": "Jane Doe", "title": "Hi, planet!", "year": "2021", "tracks": [
+        {"title": "solo", "artist": "Jane Doe", "genre": "instrumental", "duration": "5:00"},
+        {"title": "sleep", "artist": "Jane ft. John", "genre": "classics", "duration": "44:07"}
+    ] }
+  ]
