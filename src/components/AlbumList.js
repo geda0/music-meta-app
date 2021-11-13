@@ -2,6 +2,7 @@ import React from 'react';
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
 import { Table } from 'reactstrap';
+import {Link} from "react-router-dom";
 
 export const GET_ALBUMS = gql`
   query GetAlbums {
@@ -21,6 +22,7 @@ export default () => (
           <tr>
             <th>Artist</th>
             <th>Title</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -28,6 +30,7 @@ export default () => (
             <tr key={album.id}>
               <td>{album.artist}</td>
               <td>{album.title}</td>
+              <td><Link to={`/album/${album.id}`}>View Album</Link></td>
             </tr>
           ))}
         </tbody>
